@@ -14,8 +14,6 @@ builder.Services.AddSingleton<PasswordHasher<string>>();
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options => { options.Cookie.IsEssential = true; });
 
-
-
 var app = builder.Build();
 app.UseDefaultFiles();
 app.UseStaticFiles();
