@@ -43,7 +43,7 @@ jobs:
      - name: Build
        run: dotnet build SwineSync.Tests/SwineSync.Tests.csproj
      - name: Run xUnit tests
-        run: dotnet test SwineSync.Tests/SwineSync.Tests.csproj
+       run: dotnet test SwineSync.Tests/SwineSync.Tests.csproj
 
   gui_tests:
     runs-on: ubuntu-latest
