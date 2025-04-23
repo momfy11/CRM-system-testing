@@ -27,8 +27,7 @@ jobs:
       - name: Start Server
         run: cd server && nohup dotnet run &
       - name: Run API-Tests
-        run: newman run ./api-test/SwineSyncAPITests.postman_collection.json
-
+        run: newman run ./api-test/SwineSyncAPITests.postman_collection.json -e ./api-test/Swine_Sync_envirements.postman_environment.json
   xunit_tests:
     runs-on: ubuntu-latest
     needs: api_tests
