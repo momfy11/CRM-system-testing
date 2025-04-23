@@ -30,20 +30,20 @@ jobs:
         run: newman run ./api-test/SwineSyncAPITests.postman_collection.json
 
   xunit_tests:
-  runs-on: ubuntu-latest
-  needs: api_tests
-  steps:
-    - uses: actions/checkout@v4
-    - name: Setup dotnet
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: 8.0.x
-    - name: Restore
-      run: dotnet restore
-    - name: Build
-      run: dotnet build SwineSync.Tests/SwineSync.Tests.csproj
-    - name: Run xUnit tests
-      run: dotnet test SwineSync.Tests/SwineSync.Tests.csproj
+    runs-on: ubuntu-latest
+    needs: api_tests
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup dotnet
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - name: Restore
+        run: dotnet restore
+      - name: Build
+        run: dotnet build SwineSync.Tests/SwineSync.Tests.csproj
+      - name: Run xUnit tests
+        run: dotnet test SwineSync.Tests/SwineSync.Tests.csproj
 
   gui_tests:
     runs-on: ubuntu-latest
