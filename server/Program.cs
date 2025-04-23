@@ -8,7 +8,6 @@ var dataSourceBuilder = new NpgsqlDataSourceBuilder("Host=217.76.56.135;Database
 dataSourceBuilder.MapEnum<UserRole>();
 var db = dataSourceBuilder.Build();
 
-
 builder.Services.AddSingleton<NpgsqlDataSource>(db);
 builder.Services.AddSingleton<PasswordHasher<string>>();
 builder.Services.AddDistributedMemoryCache();
