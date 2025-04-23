@@ -36,11 +36,14 @@
 					"raw": "{\"Email\": \"super_gris@mail.com\", \"Password\": \"kung\"}"
 				},
 				"url": {
-					"raw": "{{url}}/login",
+					"raw": "http://localhost:5000/api/login",
+					"protocol": "http",
 					"host": [
-						"{{url}}"
+						"localhost"
 					],
+					"port": "5000",
 					"path": [
+						"api",
 						"login"
 					]
 				}
@@ -67,11 +70,14 @@
 				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/companies/block/3/false",
+					"raw": "http://localhost:5000/api/companies/block/3/false",
+					"protocol": "http",
 					"host": [
-						"{{url}}"
+						"localhost"
 					],
+					"port": "5000",
 					"path": [
+						"api",
 						"companies",
 						"block",
 						"3",
@@ -101,11 +107,14 @@
 				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/companies/block/3/true",
+					"raw": "http://localhost:5000/api/companies/block/3/true",
+					"protocol": "http",
 					"host": [
-						"{{url}}"
+						"localhost"
 					],
+					"port": "5000",
 					"path": [
+						"api",
 						"companies",
 						"block",
 						"3",
@@ -135,11 +144,14 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/login",
+					"raw": "http://localhost:5000/api/login",
+					"protocol": "http",
 					"host": [
-						"{{url}}"
+						"localhost"
 					],
+					"port": "5000",
 					"path": [
+						"api",
 						"login"
 					]
 				}
@@ -175,11 +187,14 @@
 					"raw": "{\"Email\": \"sow-supervisor@company3.com\", \"Password\": \"pigboss123\"}"
 				},
 				"url": {
-					"raw": "{{url}}/login",
+					"raw": "http://localhost:5000/api/login",
+					"protocol": "http",
 					"host": [
-						"{{url}}"
+						"localhost"
 					],
+					"port": "5000",
 					"path": [
+						"api",
 						"login"
 					]
 				}
@@ -219,11 +234,14 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/products/company?active=true",
+					"raw": "http://localhost:5000/api/products/company?active=true",
+					"protocol": "http",
 					"host": [
-						"{{url}}"
+						"localhost"
 					],
+					"port": "5000",
 					"path": [
+						"api",
 						"products",
 						"company"
 					],
@@ -267,11 +285,14 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/products",
+					"raw": "http://localhost:5000/api/products",
+					"protocol": "http",
 					"host": [
-						"{{url}}"
+						"localhost"
 					],
+					"port": "5000",
 					"path": [
+						"api",
 						"products"
 					]
 				}
@@ -299,11 +320,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/products/78",
+					"raw": "http://localhost:5000/api/products/78",
+					"protocol": "http",
 					"host": [
-						"{{url}}"
+						"localhost"
 					],
+					"port": "5000",
 					"path": [
+						"api",
 						"products",
 						"78"
 					]
@@ -331,11 +355,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/users/company/service_agent?active=true",
+					"raw": "http://localhost:5000/api/users/company/service_agent?active=true",
+					"protocol": "http",
 					"host": [
-						"{{url}}"
+						"localhost"
 					],
+					"port": "5000",
 					"path": [
+						"api",
 						"users",
 						"company",
 						"service_agent"
@@ -379,11 +406,14 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/users/block/17/false",
+					"raw": "http://localhost:5000/api/users/block/17/false",
+					"protocol": "http",
 					"host": [
-						"{{url}}"
+						"localhost"
 					],
+					"port": "5000",
 					"path": [
+						"api",
 						"users",
 						"block",
 						"17",
@@ -411,8 +441,11 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"packages": {},
-						"type": "text/javascript"
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
@@ -420,11 +453,14 @@
 				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/products/block/22/false",
+					"raw": "http://localhost:5000/api/products/block/22/false",
+					"protocol": "http",
 					"host": [
-						"{{url}}"
+						"localhost"
 					],
+					"port": "5000",
 					"path": [
+						"api",
 						"products",
 						"block",
 						"22",
@@ -454,11 +490,14 @@
 				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/products/block/22/true",
+					"raw": "http://localhost:5000/api/products/block/22/true",
+					"protocol": "http",
 					"host": [
-						"{{url}}"
+						"localhost"
 					],
+					"port": "5000",
 					"path": [
+						"api",
 						"products",
 						"block",
 						"22",
@@ -488,11 +527,14 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/login",
+					"raw": "http://localhost:5000/api/login",
+					"protocol": "http",
 					"host": [
-						"{{url}}"
+						"localhost"
 					],
+					"port": "5000",
 					"path": [
+						"api",
 						"login"
 					]
 				}
@@ -528,11 +570,14 @@
 					"raw": "{\"email\": \"test@kund.se\", \"productId\": 1, \"categoryId\": 2, \"description\": \"Min skrivare fungerar inte\", \"message\": \"Den skriver ut i rosa!\"}"
 				},
 				"url": {
-					"raw": "{{url}}/tickets",
+					"raw": "http://localhost:5000/api/tickets",
+					"protocol": "http",
 					"host": [
-						"{{url}}"
+						"localhost"
 					],
+					"port": "5000",
 					"path": [
+						"api",
 						"tickets"
 					]
 				}
@@ -568,11 +613,14 @@
 					"raw": "{\"text\": \"Testmeddelande\", \"slug\": \"aa\", \"customer\": true}"
 				},
 				"url": {
-					"raw": "{{url}}/messages",
+					"raw": "http://localhost:5000/api/messages",
+					"protocol": "http",
 					"host": [
-						"{{url}}"
+						"localhost"
 					],
+					"port": "5000",
 					"path": [
+						"api",
 						"messages"
 					]
 				}
@@ -599,11 +647,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/messages/aa",
+					"raw": "http://localhost:5000/api/messages/aa",
+					"protocol": "http",
 					"host": [
-						"{{url}}"
+						"localhost"
 					],
+					"port": "5000",
 					"path": [
+						"api",
 						"messages",
 						"aa"
 					]
@@ -641,11 +692,14 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/tickets/status/aa",
+					"raw": "http://localhost:5000/api/tickets/status/aa",
+					"protocol": "http",
 					"host": [
-						"{{url}}"
+						"localhost"
 					],
+					"port": "5000",
 					"path": [
+						"api",
 						"tickets",
 						"status",
 						"aa"
@@ -684,11 +738,14 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/tickets/status/aa",
+					"raw": "http://localhost:5000/api/tickets/status/aa",
+					"protocol": "http",
 					"host": [
-						"{{url}}"
+						"localhost"
 					],
+					"port": "5000",
 					"path": [
+						"api",
 						"tickets",
 						"status",
 						"aa"
